@@ -58,8 +58,9 @@
     font-size: 17px;
     display: block;
     border-bottom: 1px solid black;
+   
   }
-
+ 
   .instagram {
     position: absolute;
     bottom: 2%;
@@ -98,13 +99,19 @@
     text-align: left;
     margin: auto;
   }
-
+  .col2::before,
+  .col4::before,
+  .col5::before  {
+    content: "\a";
+    white-space: pre;
+  }
   .collections span {
     display: none;
   }
   .collections a {
     text-decoration: none;
     font-size: 0.8rem;
+    padding-left: 0;
   }
   .collections a:hover {
     text-decoration: none;
