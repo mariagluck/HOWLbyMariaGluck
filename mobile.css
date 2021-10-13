@@ -28,7 +28,7 @@
     background-color: rgb(0, 0, 0);
     color: rgb(255, 255, 255);
   }
-
+ 
   #home ul {
     list-style: none;
     width: 50vw;
@@ -129,7 +129,6 @@
   }
 
   #springsummer17 h1 {
-    font-size: 1.5em;
     z-index: 10;
     color: rgb(0, 0, 0);
     font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
@@ -149,6 +148,8 @@
   }
 
   #springSummer14 h1 {
+    font-size: 1.3em;
+    margin-bottom: 20px;
     z-index: 10;
     color: rgb(0, 0, 0);
     font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
@@ -181,24 +182,25 @@
   #springSummer14 img {
     height: auto;
     width: 80vw;
+    margin: auto;
   }
 
   #vandals .back-btn {
-    top: 1%;
+    top: 0.8%;
   }
 
   #springsummer17 .back-btn {
-    top: 1.9%;
+    top: 2.1%;
   }
   #fallWinter16 .back-btn {
-    top: 5%;
+    top: 4.4%;
   }
 
   #fallWinter15 .back-btn {
     top: 1%;
   }
   #springSummer14 .back-btn {
-    top: 1.5%;
+    top: 1.2%;
   }
 
   .aboutme_container {
