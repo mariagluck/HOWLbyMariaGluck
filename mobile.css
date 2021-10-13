@@ -63,7 +63,7 @@
  
   .instagram {
     position: absolute;
-    bottom: 2%;
+    bottom: 0%;
     right: 20%;
   }
   .facebook {
@@ -92,7 +92,7 @@
     border: none;
     position: absolute;
     width: 100%;
-    top: 45%;
+    top: 25%;
     left: 0;
     /* margin-top: 50%; */
     height: 80vh;
@@ -102,6 +102,10 @@
   .col2::before,
   .col4::before,
   .col5::before  {
+    content: "\a \a";
+    white-space: pre;
+  }
+  .col3::before  {
     content: "\a";
     white-space: pre;
   }
