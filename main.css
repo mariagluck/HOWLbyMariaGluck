@@ -1,0 +1,331 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 1.5rem;  /* 1rem will equal this now */
+    line-height: 1.6;
+    font-family: sans-serif; /* add google fonts */
+}
+
+/* PAGES  */
+.page {
+    display: none;
+    width: 100%;
+    min-height: 100%; /*allow for content off the bottom of the page */
+    position: absolute;  /* or absolute if the user needs to scroll for more content */
+    padding: 1rem 2rem;
+}
+.active{
+    display: block; 
+}
+
+.icon {
+    display: none;
+}
+ul {
+    list-style: none;
+    float: right;
+    position: absolute;
+    top: calc(50% - 100px);
+    left: calc(93% - 100px);
+}
+ul a {
+    text-decoration: none; 
+    color: rgb(255, 255, 255);
+}
+
+#home {
+    background-color: hsl(0, 0%, 100%);
+    background-image: url(images/POSTERS_VANDALS_HOWL_3.jpg);
+    background-size: 65%;
+    background-repeat: no-repeat;
+    background-position-x: 40%;
+    background-position-y: center;
+    overflow: hidden;
+    height: 100%;
+}
+#home ul a {
+    text-decoration: none; 
+    color: rgb(0, 0, 0);
+}
+
+#collections {
+    background-color: hsl(0, 0%, 0%);
+}
+#about {
+    background-color: hsl(0, 0%, 0%);
+}
+#contact {
+    background-color: hsl(0, 0%, 0%);
+}
+#vandals {
+    background-color: hsl(0, 0%, 100%);
+}
+
+h1 {
+    font-size: 2rem;
+    font-weight: 600;
+    transition: all 0.4s;
+    color:white;
+}
+.big {
+    font-size: 5rem;
+    font-weight: 900;
+}
+
+/* home */
+#howl {
+    z-index: 10;
+    color:rgb(0, 0, 0);
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
+.home {
+    height: 90vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /* align-items: center; */
+}
+
+/* Collections */
+ .collections {
+    width: 90vw;
+    margin: 7% auto;
+    display: block;
+    padding: 5% 10%;
+    border-radius: 8px;  
+    text-decoration: none; 
+}
+
+.collections:hover {
+    border: transparent;
+   
+}
+.collections a {
+    text-decoration: none; 
+    color: white;
+    font-size: 1.5rem;
+    padding: 30px;
+}
+.collections a:hover {
+    text-decoration: none; 
+    font-weight: bolder;
+    
+}
+#vandals h1{
+    z-index: 10;
+    color:rgb(0, 0, 0);
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#springsummer17 h1{
+    z-index: 10;
+    color:rgb(0, 0, 0);
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+#fallWinter16 h1{
+    z-index: 10;
+    color:rgb(0, 0, 0);
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+#fallWinter15 h1{
+    z-index: 10;
+    color:rgb(0, 0, 0);
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#springSummer14 h1{
+    z-index: 10;
+    color:rgb(0, 0, 0);
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+ }
+  
+/* Create four equal columns that sits next to each other */
+.column {
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+  
+.back-btn {
+   text-decoration: none;
+   color: black;
+   position: absolute;
+   right: 5%;
+   top: 2%;  
+}
+
+/* about */
+
+.aboutme_container{
+    width: 60vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: auto;
+}   
+
+.img_profile img {
+    height: 500px;
+    width: auto;
+    position: relative;
+    top: 16%;
+    
+}
+/* contact */
+
+*:focus {
+    outline: 0;
+  }
+  
+  .wrapper {
+    position: absolute;
+    top: 16%;
+    left: 35%;
+    margin: 100px auto 0;
+    width: 70%;
+    max-width: 800px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  form {
+    width: 100%;
+    margin: 0;
+  }
+  
+  form * {
+    font-size: 0.8em;
+    letter-spacing: 0.075em;
+    font-weight: 300;
+    cursor: pointer;
+    text-decoration: none;
+  }
+  
+  form .field {
+    width: 50%;
+    position: relative;
+    margin-bottom: 15px;
+  }
+  
+  form .field label {
+    font-size: 0.8em;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: black;
+    border-bottom: 1px solid white;
+    color: white;
+    width: 100%;
+    height: 64px;
+    transition: width 333ms ease-in-out;
+    text-align: center;
+    padding: 18px 0;
+  }
+  
+  form .field input[type="text"],
+  form .field textarea {
+    border: none;
+    width: 100%;
+    height: 64px;
+    margin: 0;
+    padding-left: 19.5%;
+    color: #000000;
+  }
+  
+  form #msg {
+    height: 64px;
+    resize: none;
+    transition: all 333ms ease-in-out;
+    padding-top: 18px;
+  }
+  form textarea:focus#msg,
+  form textarea:not(:placeholder-shown)#msg {
+    font-size: 0.8em;
+    font-family:Arial, Helvetica, sans-serif;
+    height: 186px;
+  }
+  form input[type="text"]:focus + label,
+  form input[type="text"]:not(:placeholder-shown) + label,
+  form textarea:focus + label,
+  form textarea:not(:placeholder-shown) + label,
+  form .field:hover label {
+    width: 18%;
+  }
+  form input[type="submit"] {
+    font-size: 0.6em;
+    background: black;
+    appearance: none;
+    border: 1px solid white;
+    position: relative;
+    padding: 13px 50px;
+    transition: all 0.3s ease-in-out;
+    color: white;
+  }
+  form input[type="submit"]:hover,
+  form input[type="submit"]:focus {
+    background: #ffffff;  
+    color: black;
+  }
+  
+
+
+/* //social media links at bottom */
+
+.social {
+    /* height: 90vh; */
+    display: flex;
+    flex-direction: row;
+    justify-content:flex-start;
+    /* align-items: center; */
+}
+
+.social a {
+    padding-right: 20px;
+}
+.instagram {
+    position:absolute;
+    bottom: 5%;
+    right: 7%;
+}
+.facebook {
+    position:absolute;
+    bottom: 5%;
+    right: 4%;
+}
+
+
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+  /* @media screen and (max-width: 800px) {
+    .column {
+      flex: 50%;
+      max-width: 50%;
+    }
+  }
+  
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  /* @media screen and (max-width: 600px) {
+    .column {
+      flex: 100%;
+      max-width: 100%;
+    }
+  } */ 
+
+  
