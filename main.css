@@ -102,10 +102,7 @@ h1 {
   border-radius: 8px;
   text-decoration: none;
 }
-.col5::before  {
-  content: "\a";
-  white-space: pre;
-}
+
 .collections:hover {
   border: transparent;
 }
