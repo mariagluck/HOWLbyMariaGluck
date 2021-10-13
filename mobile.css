@@ -1,237 +1,224 @@
 @media only screen and (max-width: 768px) {
-    /* For mobile phones: */
-    #home,
-    #collections,
-    #contact,
-    #about {
-        overflow: hidden;
-    }
-       .topnav #myLinks {
-        display: none;
-      }
-       .topnav a {
-        color: white;
-        padding: 14px 16px;
-        text-decoration: none;
-        font-size: 17px;
-        display: block;
-      }
-
-      .topnav a.icon {
-        background: black;
-        display: block;
-        position: absolute;
-        right: 0;
-        top: 0;
-      }
-      .topnav a:hover {
-        background-color: rgb(0, 0, 0);
-        color: rgb(255, 255, 255);
-      }
-
-      #home ul {
-        list-style: none;
-        width: 50vw;
-        background-color: white;
-        float: right;
-        position: absolute;
-        top: calc(23% - 100px);
-        left: calc(83% - 100px);
-    } 
-        #collections ul,
-        #about ul,
-        #contact ul {
-          list-style: none;
-          background-color: rgb(255, 255, 255);
-          position: absolute;
-          top: 15%;
-          right: 0;
-          z-index: 100;
-      }
-      
-        #collections li a,
-        #about li a,
-        #contact li a {
-          color:rgb(0, 0, 0);
-          padding: 10px 14px;
-          text-decoration: none;
-          font-size: 17px;
-          display: block;
-          border-bottom: 1px solid black;
-      }
-  
-      .instagram {
-        position:absolute;
-        bottom: 5%;
-        right: 20%;
-      }
-      .facebook {
-        position:absolute;
-        bottom: 5%;
-        right: 4%;
-      }
-      #home {
-        
-        background-image: url(images/vandals/HOWL_VANDALS_FW17_25.jpg);
-        background-size: 85%;
-    }
-    /* .aboutme_container{
-        width: 90vw;
-        height: 100%;
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-        margin: auto;
-    } 
-    .img_profile img {
-        width: 90vw;
-        height: auto;
-        position: relative;
-        top: 50%;  
-        
-    } */
-    #collections {
-        background-color: hsl(0, 0%, 0%);
-    }
-    #about {
-        background-color: hsl(0, 0%, 0%);
-    } 
-    #contact {
-        background-color: hsl(0, 0%, 0%);
-    } 
-
-       /* Collections */
-     .collections {
-      display: block;
-      border: none;
-      position: absolute;
-      width: 95vw;
-      top: 35%;
-      left: 0;
-      /* margin-top: 50%; */
-      height: 80vh;
-      text-align: center;
-      margin: auto;
-    }
-    
-    .collections span {
-      display: none;
-    }
-    .collections a {
-      text-decoration: none; 
-      font-size: 1.2rem;
-    }
-    .collections a:hover {
-      text-decoration: none; 
-      font-weight: bolder;
-    }
-    #vandals h1{
-      z-index: 10;
-      color:rgb(0, 0, 0);
-      font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    }
-    
-    #springsummer17 h1{
-      font-size: 1.8em;
-      z-index: 10;
-      color:rgb(0, 0, 0);
-      font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    }
-    #fallWinter16 h1{
-      z-index: 10;
-      color:rgb(0, 0, 0);
-      font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    }
-    #fallWinter15 h1{
-      z-index: 10;
-      color:rgb(0, 0, 0);
-      font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    }
-    
-    #springSummer14 h1{
-      z-index: 10;
-      color:rgb(0, 0, 0);
-      font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    }
-    
-    #vandals .row,
-    #springsummer17 .row,
-    #fallWinter16 .row,
-    #fallWinter15 .row,
-    #springSummer14 .row {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-    }
-    #vandals .column,
-    #springsummer17 .column,
-    #fallWinter16 .column,
-    #fallWinter15 .column,
-    #springSummer14 .column {
-      flex: 0;
-      max-width: none;
-      padding: 0;
-    }
-    #vandals img,
-    #springsummer17 img,
-    #fallWinter16 img,
-    #fallWinter15 img,
-    #springSummer14 img {
-      height: auto;
-      width: 80vw;
-    }
-
-    #vandals .back-btn {
-      top: 0.9%;
-    }
-
-    #springsummer17 .back-btn {
-      top: 1%;
-    }
-    #fallWinter16 .back-btn {
-      top: 2.1%;
-    }
-
-    #fallWinter15 .back-btn {
-      top: 0.7%;
-    }
-    #springSummer14 .back-btn {
-      top: 1%;
-    }
-
-
-    .aboutme_container{
-    z-index: 1;
-  }   
-
-  .img_profile img {
-      height: 300px;
-      width: auto;
-      position: relative;
-      top: 50%;
-      
+  /* For mobile phones: */
+  #home,
+  #collections,
+  #contact,
+  #about {
+    overflow: hidden;
+  }
+  .topnav #myLinks {
+    display: none;
+  }
+  .topnav a {
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
   }
 
-    .wrapper,
-    form .field  {
-      width: 90%;
-    }
-    .wrapper {
-      position: absolute;
-      top: 25%;
-      left: 10%;
-    }
-    form input[type="submit"] {
-      background: black;
-      appearance: none;
-      border: 1px solid white;
-      position: relative;
-      padding: 10px 40px;
-      left: 5%; 
-    }
-    form .field:hover label {
-      display: none;
-    }
+  .topnav a.icon {
+    background: black;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav a:hover {
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+  }
 
+  #home ul {
+    list-style: none;
+    width: 50vw;
+    background-color: white;
+    float: right;
+    position: absolute;
+    top: calc(23% - 100px);
+    left: calc(83% - 100px);
+  }
+  #collections ul,
+  #about ul,
+  #contact ul {
+    list-style: none;
+    background-color: rgb(255, 255, 255);
+    position: absolute;
+    top: 15%;
+    right: 0;
+    z-index: 100;
+  }
+
+  #collections li a,
+  #about li a,
+  #contact li a {
+    color: rgb(0, 0, 0);
+    padding: 10px 14px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+    border-bottom: 1px solid black;
+  }
+
+  .instagram {
+    position: absolute;
+    bottom: 2%;
+    right: 20%;
+  }
+  .facebook {
+    position: absolute;
+    bottom: 2%;
+    right: 4%;
+  }
+  #home {
+    background-image: url(images/vandals/HOWL_VANDALS_FW17_25.jpg);
+    background-size: 85%;
+  }
+  
+  #collections {
+    background-color: hsl(0, 0%, 0%);
+  }
+  #about {
+    background-color: hsl(0, 0%, 0%);
+  }
+  #contact {
+    background-color: hsl(0, 0%, 0%);
+  }
+
+  /* Collections */
+  .collections {
+    display: block;
+    border: none;
+    position: absolute;
+    width: 95vw;
+    top: 35%;
+    left: 0;
+    /* margin-top: 50%; */
+    height: 80vh;
+    text-align: center;
+    margin: auto;
+  }
+
+  .collections span {
+    display: none;
+  }
+  .collections a {
+    text-decoration: none;
+    font-size: 1.2rem;
+  }
+  .collections a:hover {
+    text-decoration: none;
+    font-weight: bolder;
+  }
+  #vandals h1 {
+    z-index: 10;
+    color: rgb(0, 0, 0);
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+      "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  }
+
+  #springsummer17 h1 {
+    font-size: 1.8em;
+    z-index: 10;
+    color: rgb(0, 0, 0);
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+      "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  }
+  #fallWinter16 h1 {
+    z-index: 10;
+    color: rgb(0, 0, 0);
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+      "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  }
+  #fallWinter15 h1 {
+    z-index: 10;
+    color: rgb(0, 0, 0);
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+      "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  }
+
+  #springSummer14 h1 {
+    z-index: 10;
+    color: rgb(0, 0, 0);
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+      "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  }
+
+  #vandals .row,
+  #springsummer17 .row,
+  #fallWinter16 .row,
+  #fallWinter15 .row,
+  #springSummer14 .row {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  #vandals .column,
+  #springsummer17 .column,
+  #fallWinter16 .column,
+  #fallWinter15 .column,
+  #springSummer14 .column {
+    flex: 0;
+    max-width: none;
+    padding: 0;
+  }
+  #vandals img,
+  #springsummer17 img,
+  #fallWinter16 img,
+  #fallWinter15 img,
+  #springSummer14 img {
+    height: auto;
+    width: 80vw;
+  }
+
+  #vandals .back-btn {
+    top: 0.9%;
+  }
+
+  #springsummer17 .back-btn {
+    top: 1%;
+  }
+  #fallWinter16 .back-btn {
+    top: 2.1%;
+  }
+
+  #fallWinter15 .back-btn {
+    top: 0.7%;
+  }
+  #springSummer14 .back-btn {
+    top: 1%;
+  }
+
+  .aboutme_container {
+    z-index: 1;
+  }
+
+  .img_profile img {
+    height: 300px;
+    width: auto;
+    position: relative;
+    top: 50%;
+  }
+
+  .wrapper,
+  form .field {
+    width: 90%;
+  }
+  .wrapper {
+    position: absolute;
+    top: 25%;
+    left: 10%;
+  }
+  form input[type="submit"] {
+    background: black;
+    appearance: none;
+    border: 1px solid white;
+    position: relative;
+    padding: 10px 40px;
+    left: 5%;
+  }
+  form .field:hover label {
+    display: none;
+  }
 }
