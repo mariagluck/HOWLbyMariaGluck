@@ -129,7 +129,7 @@
   }
 
   #springsummer17 h1 {
-    font-size: 1.8em;
+    font-size: 1.5em;
     z-index: 10;
     color: rgb(0, 0, 0);
     font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
@@ -184,21 +184,21 @@
   }
 
   #vandals .back-btn {
-    top: 0.9%;
+    top: 1%;
   }
 
   #springsummer17 .back-btn {
-    top: 1%;
+    top: 1.9%;
   }
   #fallWinter16 .back-btn {
-    top: 2.1%;
+    top: 5%;
   }
 
   #fallWinter15 .back-btn {
-    top: 0.7%;
+    top: 1%;
   }
   #springSummer14 .back-btn {
-    top: 1%;
+    top: 1.5%;
   }
 
   .aboutme_container {
